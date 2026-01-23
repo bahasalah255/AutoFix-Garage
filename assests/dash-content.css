@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cards {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    
+    margin: 20px;
+    flex-wrap: wrap;
+}
+.card {
+    border: 1px solid transparent;
+    padding: 15px 30px;
+   border-radius: 6px;
+   transition: 0.3s;
+}
+.card.users {
+    background-color: blue;
+    width: 180px;
+}
+.titre {
+    color: white;
+    text-shadow: 10px 20px 30px rgb(0, 0, 0.1);
+    font-weight: bold;
+}
+p.counter {
+    font-size: 27px;
+    color: white;
+    font-weight: bold;
+}
+.card.voitures {
+    width: 180px;
+    background-color: rgb(123, 123, 241);
+}
+.card.clients {
+     width: 180px;
+    background-color: rgb(123, 123, 241);
+}
+.card.repa{
+    width: 220px;
+    background-color: rgb(243, 77, 11);
+    
+}
+.card.repater {
+    width: 180px;
+    background-color: rgb(80, 148, 63);
+}
+.card:hover {
+transform: translateY(-5px);
+}
+.links {
+    display: flex;
+    justify-content: center;
+    margin-left: 650px;
+    border: 1px solid transparent;
+    padding-top: 300px;
+    border-radius: 6px;
+    background-color: rgb(238, 245, 244);
+}
+.navlinks {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    justify-content: center;
+    color: black;
+    position: absolute;
+    top: 270px;
+}
+.actions {
+    position: absolute;
+    font-size: 30px;
+    top: 200px;
+    color: rgb(47, 47, 133);
+}
+.action_link {
+    border: 1px solid transparent;
+    padding : 10px 50px;
+    background-color: rgb(69, 69, 197);
+    border-radius: 6px;
+    color: white;
+    transition: 0.3s;
+}
+.action_link:hover {
+    transform: translateY(-5px);
+}
+.llinks {
+    
+    text-decoration: none;
+    color: white;
+}

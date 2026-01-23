@@ -1,0 +1,88 @@
+/* ===== Global ===== */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* ===== Container Facture ===== */
+.facture {
+    width: 650px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* ===== Header ===== */
+.facture h2 {
+    text-align: center;
+    color: #39448b;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+/* ===== Sections ===== */
+.facture h3 {
+    color: #39448b;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+.facture p {
+    margin: 5px 0;
+}
+
+/* ===== Table Réparations ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #39448b;
+    color: #fff;
+}
+
+/* ===== Montants ===== */
+.montants p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.montants strong {
+    font-size: 18px;
+    color: #e63946;
+}
+
+/* ===== Footer ===== */
+.facture p.footer {
+    text-align: center;
+    margin-top: 30px;
+    font-style: italic;
+    color: #555;
+}
+
+/* ===== Responsive ===== */
+@media print {
+    body {
+        background-color: #fff;
+    }
+    .facture {
+        box-shadow: none;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+}

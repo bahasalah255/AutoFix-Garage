@@ -1,0 +1,607 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ===== STYLES GLOBAUX ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #202020;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Amélioration de la lisibilité */
+p {
+    line-height: 1.7;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+h6 {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* ===== NAVIGATION ===== */
+.nav {
+    display: flex;
+    border: 1px solid transparent;
+    padding: 15px 30px;
+    position: fixed; 
+    top: 0;
+    z-index: 999;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.nav:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+}
+
+.h3-nav {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 0;
+    font-weight: 800;
+    font-size: 1.8rem;
+    letter-spacing: -0.5px;
+}
+
+.h3-nav .text-danger {
+    font-weight: 900;
+}
+
+.fs-small {
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    opacity: 0.8;
+}
+
+.image {
+    height: auto;
+    width: 150px;
+    transition: transform 0.3s ease;
+}
+
+.image:hover {
+    transform: scale(1.05);
+}
+
+/* Navigation Links */
+.links {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    gap: 40px;
+    margin-left: auto;
+    margin-top: 15px;
+    align-items: center;
+}
+
+.link {
+    transition: all 0.3s ease; 
+    border-bottom: 2px solid transparent;
+    padding-bottom: 5px;
+}
+
+.link:hover {
+    border-bottom: 2px solid #dc3545;
+}
+
+.lien {
+    text-decoration: none;
+    color: #202020;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 0.3px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.lien:hover {
+    color: #dc3545;
+    font-weight: 600;
+}
+
+.nav-link.active {
+    color: #dc3545;
+    border-bottom: 2px solid #dc3545;
+}
+
+#mode {
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+#mode:hover {
+    background-color: rgba(220, 53, 69, 0.1);
+    transform: rotate(20deg);
+}
+
+/* ===== HERO SECTION ===== */
+.accueil {
+    margin-top: 80px;
+    height: 550px;
+    border: 1px solid transparent;
+    background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(220, 53, 69, 0.3)), 
+                      url("../images/test.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 12px;
+    transform: translateY(-50px);
+    opacity: 0;
+    animation: slideDown 0.9s ease forwards;
+    position: relative;
+    overflow: hidden;
+}
+
+.accueil::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 30%, rgba(220, 53, 69, 0.1) 100%);
+    pointer-events: none;
+}
+
+.textes {
+    margin: 20px 40px;
+    margin-top: 180px;
+    position: relative;
+    z-index: 2;
+}
+
+#typing-text {
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.7); 
+    letter-spacing: -1px;
+    margin-bottom: 15px;
+}
+
+.accueil h1 {
+    color: white;
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+
+.accueil p {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+    margin-bottom: 25px;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes slideDown {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== BOUTONS ===== */
+.btn {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    padding: 12px 30px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.btn-contant {
+    background: linear-gradient(135deg, #dc3545, #c82333);
+    box-shadow: 0 4px 15px rgba(220, 53, 69, 0.3);
+}
+
+.btn-contant:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 25px rgba(220, 53, 69, 0.5);
+    background: linear-gradient(135deg, #c82333, #bd2130);
+}
+
+.btn-services {
+    margin: 30px auto;
+    display: block;
+    width: fit-content;
+}
+
+/* ===== SECTIONS ===== */
+.proposdenous, .services, .galerie {
+    margin: 60px 40px;
+    padding: 40px 20px;
+}
+
+#proposdenous, #services, #galerie {
+    transform: translateY(-50px); 
+    opacity: 0; 
+}
+
+#proposdenous.active, #services.active, #galerie.active {
+    animation: fadeInUp 0.9s ease forwards;
+}
+
+.proposdenous h3, .services h3, .galerie h3 {
+    text-align: center;
+    color: #202020;
+    margin-bottom: 10px;
+}
+
+hr {
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #dc3545, #ff6b6b);
+    border: none;
+    margin: 10px auto 30px;
+    border-radius: 2px;
+}
+
+/* ===== CARDS ===== */
+.mycard, #mycard {
+    width: 270px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    position: relative;
+}
+
+.mycard::before, #mycard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(220, 53, 69, 0.1), transparent);
+    transition: left 0.5s ease;
+}
+
+.mycard:hover::before, #mycard:hover::before {
+    left: 100%;
+}
+
+.mycard:hover, #mycard:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 30px rgba(220, 53, 69, 0.3);
+    cursor: pointer;
+}
+
+.entretien-voiture {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.mycard:hover .entretien-voiture, 
+#mycard:hover .entretien-voiture {
+    transform: scale(1.1);
+}
+
+.card-body h6 {
+    font-weight: 700;
+    font-size: 1.05rem;
+    margin-bottom: 10px;
+    color: #202020;
+}
+
+.card-body p {
+    font-weight: 400;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #666;
+}
+
+/* Cards Stats */
+.card-cli {
+    width: 230px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.card-cli:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.icon-client {
+    margin-top: 40px;
+    font-size: 4rem;
+    margin-left: 80px;
+    background: linear-gradient(135deg, #dc3545, #ff6b6b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+#clients, #reparations, #Années, #voitures {
+    font-weight: 800;
+    font-size: 2rem;
+    background: linear-gradient(135deg, #221b4d, #4133a0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Icons Services */
+.icons-services {
+    font-size: 2.5rem;
+    background: linear-gradient(135deg, #dc3545, #ff6b6b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ===== GALERIE ===== */
+.image-card {
+    width: 260px;
+    transition: all 0.4s ease;
+    padding: 0;
+    margin: 0;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.image-card:hover {
+    transform: translateY(-8px) rotate(1deg);
+    box-shadow: 0 8px 30px rgba(220, 53, 69, 0.4);
+}
+
+.employe-card {
+    width: 260px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.employe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.employe-card .card-body h6 {
+    font-weight: 700;
+    color: #dc3545;
+    margin-top: 10px;
+}
+
+.client-card {
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-left: 4px solid #dc3545;
+}
+
+.client-card:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.cards-employes, .clients-avis {
+    display: none;
+}
+
+.cards-images {
+    margin: 20px;
+}
+
+/* Boutons de navigation galerie */
+.buttons {
+    margin: 30px 0;
+}
+
+.buttons .btn {
+    margin: 5px;
+}
+
+/* ===== SHOW/HIDE ANIMATIONS ===== */
+.mycard1 {
+    display: none !important;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.mycard1.show {
+    display: block !important; 
+    opacity: 1;
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+/* ===== DARK MODE ===== */
+body.dark-mode {
+    background-color: #0d0d0d;
+    color: #f1f1f1;
+}
+
+body.dark-mode .nav {
+    background-color: #1a1a1a;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode .lien {
+    color: #f1f1f1;
+}
+
+body.dark-mode .lien:hover {
+    color: #ff6b6b;
+}
+
+body.dark-mode #mode i {
+    color: #ffd700;
+}
+
+body.dark-mode .mycard,
+body.dark-mode #mycard {
+    background-color: #1e1e1e; 
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .mycard:hover,
+body.dark-mode #mycard:hover {
+    box-shadow: 0 12px 30px rgba(255, 107, 107, 0.3);
+}
+
+body.dark-mode .card-cli {
+    background-color: #1e1e1e; 
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .image-card {
+    background-color: #1e1e1e;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .employe-card,
+body.dark-mode .client-card {
+    background-color: #1e1e1e; 
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .client-card {
+    border-left: 4px solid #ff6b6b;
+}
+
+body.dark-mode #clients,
+body.dark-mode #reparations,
+body.dark-mode #Années,
+body.dark-mode #voitures {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+body.dark-mode .card-body h6 {
+    color: #f1f1f1;
+}
+
+body.dark-mode .card-body p {
+    color: #bbb;
+}
+
+body.dark-mode h3 {
+    color: #f1f1f1;
+}
+
+body.dark-mode hr {
+    background: linear-gradient(90deg, #ff6b6b, #ffd700);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    #typing-text {
+        font-size: 2.5rem;
+    }
+    
+    .accueil {
+        height: 450px;
+    }
+    
+    .textes {
+        margin-top: 120px;
+    }
+    
+    .btn-services {
+        margin: 20px auto;
+        width: 90%;
+    }
+}
+
+@media (max-width: 576px) {
+    #typing-text {
+        font-size: 2rem;
+    }
+    
+    .accueil {
+        height: 400px;
+        margin-top: 70px;
+    }
+    
+    .textes {
+        margin: 20px;
+        margin-top: 100px;
+    }
+    
+    .btn-services {
+        margin: 20px;
+        margin-left: 20px;
+        width: calc(100% - 40px);
+    }
+    
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cards_cli {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .mycard, #mycard, .card-cli, .image-card, .employe-card {
+        margin: 10px auto;
+    }
+    
+    .nav {
+        padding: 10px 15px;
+    }
+    
+    .links {
+        gap: 20px;
+    }
+    
+    .h3-nav {
+        font-size: 1.5rem;
+    }
+    
+    .image {
+        width: 100px;
+    }
+}

@@ -1,0 +1,459 @@
+ <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="../assests/home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <nav class="navbar nav navbar-expand-lg shadow-sm fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="../images/logo1.png" alt="logo AutoFix" class="image">
+      <span class="fw-bold fs-2">AutoF<span class="text-danger">ix</span></span>
+      <span class="fs-small ms-1">Garage</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav align-items-center">
+        <li class="nav-item link"><a class="nav-link lien" href="index.html">Accueil</a></li>
+        <li class="nav-item link"><a class="nav-link lien" href="services.html">Services</a></li>
+        <li class="nav-item link"><a class="nav-link lien" href="galerie.html">Galerie</a></li>
+        <li class="nav-item link"><a class="nav-link lien" href="contact.php">Contact</a></li>
+        <li class="nav-item link"><a class="nav-link lien" href="../login.php" target="_blank"><i class="bi bi-box-arrow-in-left fs-4"></i></a></li>
+        <li class="nav-item link" id="mode"><a class="nav-link" href="#"><i class="bi bi-moon-fill fs-5"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+ 
+ <div class="container-fluid">
+        <div class="galerie" id="galerie">
+            <h3 class="text-center"><i class="bi text-danger bi-collection-fill"></i> Notre Galerie</h3>
+            <hr>
+            <p class="text-center">Découvrez quelques-unes de nos réalisations, réparations et moments de travail au sein de notre garage. Nous mettons un point d'honneur à offrir un service de qualité, rapide et fiable pour tous types de véhicules.</p>
+
+           
+            <div class="buttons d-flex justify-content-center gap-4">
+                <button class="btn btn-danger" id="images">
+                    <i class="bi bi-images"></i> Galerie Photos
+                </button>
+                <button class="btn btn-danger" id="equipes">
+                    <i class="bi bi-people-fill"></i> Profils d'équipe
+                </button>
+                <button class="btn btn-danger" id="clients_avis">
+                    <i class="bi bi-chat-quote-fill"></i> Témoignages clients
+                </button>
+            </div>
+
+           
+            <div class="images">
+                <div class="cards-images">
+                    <p class="text-center text-card">
+                        Explorez notre <span class="fw-bold">Garage AutoF<span class="text-danger">ix</span></span> et les réparations que nous effectuons au quotidien
+                    </p>
+                    <div class="row g-2">
+                        <div class="col-lg-3 col-md-4 col-sm-12">
+                            <div class="card image-card rounded shadow-sm">
+                                <div class="card-header p-0">
+                                    <img src="../images/galerie1.jpg" class="entretien-voiture" alt="Galerie 1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12">
+                            <div class="card image-card rounded shadow-sm">
+                                <div class="card-header p-0">
+                                    <img src="../images/galerie2.jpg" class="entretien-voiture" alt="Galerie 2">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12">
+                            <div class="card image-card rounded shadow-sm">
+                                <div class="card-header p-0">
+                                    <img src="../images/galerie3.jpg" class="entretien-voiture" alt="Galerie 3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12">
+                            <div class="card image-card rounded shadow-sm">
+                                <div class="card-header p-0">
+                                    <img src="../images/galerie4.jpg" class="entretien-voiture" alt="Galerie 4">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12">
+                            <div class="card image-card rounded shadow-sm">
+                                <div class="card-header p-0">
+                                    <img src="../images/galerie5.jpg" class="entretien-voiture" alt="Galerie 5">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12">
+                            <div class="card image-card rounded shadow-sm">
+                                <div class="card-header p-0">
+                                    <img src="../images/galerie6.jpg" class="entretien-voiture" alt="Galerie 6">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12">
+                            <div class="card image-card rounded shadow-sm">
+                                <div class="card-header p-0">
+                                    <img src="../images/galerie7.jpg" class="entretien-voiture" alt="Galerie 7">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12">
+                            <div class="card image-card rounded shadow-sm">
+                                <div class="card-header p-0">
+                                    <img src="../images/galerie8.jpg" class="entretien-voiture" alt="Galerie 8">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12">
+                            <div class="card image-card rounded shadow-sm">
+                                <div class="card-header p-0">
+                                    <img src="../images/galerie9.jpeg" class="entretien-voiture" alt="Galerie 9">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12">
+                            <div class="card image-card rounded shadow-sm">
+                                <div class="card-header p-0">
+                                    <img src="../images/galerie10.jpeg" class="entretien-voiture" alt="Galerie 10">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12">
+                            <div class="card image-card rounded shadow-sm">
+                                <div class="card-header p-0">
+                                    <img src="../images/galerie11.jpg" class="entretien-voiture" alt="Galerie 11">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-12">
+                            <div class="card image-card rounded shadow-sm">
+                                <div class="card-header p-0">
+                                    <img src="../images/galerie12.jpg" class="entretien-voiture" alt="Galerie 12">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="employess">
+                <div class="cards-employes">
+                    <p class="text-center text-employer m-0 p-0">
+                        Rencontrez <span class="fw-bold">nos professionnels</span> qualifiés, prêts à prendre soin de votre voiture
+                    </p>
+                    <div class="row g-2">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card employe-card rounded shadow-sm">
+                                <div class="card-header p-0">
+                                    <img src="../images/employer1.jpg" class="entretien-voiture" alt="Ahmed - Mécanicien">
+                                     <span class="badge bg-warning text-dark position-absolute top-0 start-0 m-2">
+            <i class="bi bi-tools me-1"></i> Expert
+        </span>
+                                </div>
+                                
+                                <div class="card-body">
+                                    <h6 class="text-center">Ahmed</h6>
+                                    <p class="text-center">Mécanicien Moteur</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card employe-card rounded shadow-sm">
+                                <div class="card-header p-0">
+                                    <img src="../images/employer2.jpg" class="entretien-voiture" alt="Youssef - Diagnostic">
+                                <span class="badge bg-info text-dark position-absolute top-0 start-0 m-2">
+    <i class="bi bi-wrench-adjustable me-1"></i> Diagnostic
+</span>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="text-center">Youssef</h6>
+                                    <p class="text-center">Spécialiste Diagnostic</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card employe-card rounded shadow-sm">
+                                <div class="card-header p-0">
+                                    <img src="../images/employer3.jpg" class="entretien-voiture" alt="Khalid - Chef Atelier">
+                                <span class="badge bg-success text-dark position-absolute top-0 start-0 m-2">
+    <i class="bi bi-gear-fill me-1"></i> Mécanique
+</span>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="text-center">Khalid</h6>
+                                    <p class="text-center">Chef Atelier</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card employe-card rounded shadow-sm">
+                                <div class="card-header p-0">
+                                    <img src="../images/employer4.png" class="entretien-voiture" alt="Iman - Secrétaire">
+                                <span class="badge bg-secondary text-white position-absolute top-0 start-0 m-2">
+    <i class="bi bi-person-lines-fill me-1"></i> Secrétaire
+</span>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="text-center">Iman</h6>
+                                    <p class="text-center">Secrétaire Générale</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card employe-card rounded shadow-sm">
+                                <div class="card-header p-0">
+                                    <img src="../images/owner.jpg" class="entretien-voiture" alt="Mohammed - Directeur">
+                                <span class="badge bg-dark text-white position-absolute top-0 start-0 m-2">
+    <i class="bi bi-person-badge me-1"></i> Directeur Général
+</span>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="text-center">Mohammed</h6>
+                                    <p class="text-center">Directeur Général</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="clients-avis">
+                <div class="cards-clients">
+                    <p class="text-center text-avis text-client">
+                        Ce que nos <span class="fw-bold">clients</span> disent de nous
+                    </p>
+                    <div class="row g-2">
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card client-card rounded shadow-sm">
+                                <div class="card-body">
+                                    <div class="rating text-warning mb-2">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </div>
+                                        <span class="badge bg-success mb-2">Avis vérifié</span>
+                                    <span class="badge bg-primary mb-2 ms-1">
+                                        <i class="bi bi-shield-check me-1"></i>
+                                        Client réel
+                                    </span>
+                                    <p>"Excellent service et équipe très professionnelle !"</p>
+                                    <h6 class="text-end">- Karim M.</h6>
+                                </div>
+                                <div class="card-footer">
+                                    <p class="text-muted">Il ya deux semaines</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card client-card rounded shadow-sm">
+                                <div class="card-body">
+                                    <div class="rating text-warning mb-2">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            
+                                        </div>
+                                        <span class="badge bg-success mb-2">Avis vérifié</span>
+                                    <span class="badge bg-primary mb-2 ms-1">
+                                        <i class="bi bi-shield-check me-1"></i>
+                                        Client réel
+                                    </span>
+                                    <p>"Rapide et fiable, je recommande fortement AutoFix."</p>
+                                    <h6 class="text-end">- Sarah L.</h6>
+                                </div>
+                                <div class="card-footer">
+                                    <p class="text-muted">Il ya deux semaines</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card client-card rounded shadow-sm">
+                                <div class="card-body">
+                                    <div class="rating text-warning mb-2">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                
+                                </div>
+                                <span class="badge bg-success mb-2">Avis vérifié</span>
+                                    <span class="badge bg-primary mb-2 ms-1">
+                                        <i class="bi bi-shield-check me-1"></i>
+                                        Client réel
+                                    </span>
+                                    <p>"Tarifs honnêtes et travail de qualité. Je reviendrai !"</p>
+                                    <h6 class="text-end">- Omar A.</h6>
+                                </div>
+                                <div class="card-footer">
+                                    <p class="text-muted">Il ya deux semaines</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="card client-card rounded shadow-sm">
+                                <div class="card-body">
+                                    <div class="rating text-warning mb-2">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                    <span class="badge bg-success mb-2">Avis vérifié</span>
+                                    <span class="badge bg-primary mb-2 ms-1">
+                                        <i class="bi bi-shield-check me-1"></i>
+                                        Client réel
+                                    </span>
+                                    <p>"Ma voiture roule comme neuve après leur intervention."</p>
+                                    <h6 class="text-end">- Fatima Z.</h6>
+                                </div>
+                                <div class="card-footer">
+                                    <p class="text-muted">Il ya deux semaines</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ <div class="footer">
+  <div class="container">
+    <div class="row text-white py-5">
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <img src="../images/logo-footer.png" class="footer-logo mb-3">
+        <p>Garage professionnel spécialisé dans la réparation, entretien et diagnostic.</p>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <h5>Liens rapides</h5>
+        <ul class="list-unstyled">
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <h5>Contact</h5>
+        <p>📞 +212 65 333 4444</p>
+        <p>✉️ contact@autofix.com</p>
+        <p>📍 Casablanca, Maroc</p>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <h5>Suivez-nous</h5>
+        <div class="social-icons d-flex gap-3">
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-twitter"></i>
+          <i class="bi bi-instagram"></i>
+          <i class="bi bi-linkedin"></i>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="text-secondary">
+
+    <p class="text-center text-white">© 2026 AutoFix Garage. Tous droits réservés.</p>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const mode = document.getElementById("mode");
+const body = document.body;
+
+mode.addEventListener("click", () => {
+    body.classList.toggle("dark-mode"); 
+
+    const icon = mode.querySelector("i");
+    if(body.classList.contains("dark-mode")){
+        icon.classList.replace("bi-moon-fill","bi-sun-fill");
+    } else {
+        icon.classList.replace("bi-sun-fill","bi-moon-fill");
+    }
+});
+const galerie = document.getElementById("galerie");
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+     if(entry.isIntersecting){
+    galerie.classList.add("active");
+    
+    
+  } 
+  })
+ 
+})
+  
+observer.observe(galerie);
+        const btnEquipes = document.getElementById("equipes");
+const btnImages = document.getElementById("images");
+const btnAvis = document.getElementById("clients_avis");
+
+
+const cardsImages = document.querySelectorAll(".image-card");
+const textImg = document.querySelectorAll(".text-card");
+const cardsEquipes = document.querySelectorAll(".cards-employes");
+const textEmployer = document.querySelectorAll(".text-employer");
+const cardsAvis = document.querySelectorAll(".client-card");
+cardsAvis.forEach(card => card.style.display = "none");
+const textavis = document.querySelectorAll(".text-avis");
+textavis.forEach(card => card.style.display = "none");
+function hideAll() {
+  cardsImages.forEach(card => card.style.display = "none");
+  textImg.forEach(card => card.style.display = "none");
+  cardsEquipes.forEach(card => card.style.display = "none");
+  textEmployer.forEach(card => card.style.display = "none");
+  cardsAvis.forEach(card => card.style.display = "none");
+  textavis.forEach(card => card.style.display = "none");
+}
+
+btnAvis.addEventListener("click", () => {
+  hideAll();
+  cardsAvis.forEach(card => {
+    card.style.display = "block";
+    card.classList.remove("show");  
+        void card.offsetWidth;          
+        card.classList.add("show");  
+  });
+  textavis.forEach(card => card.style.display = "block");
+});
+
+btnEquipes.addEventListener("click", () => {
+  hideAll();
+   cardsEquipes.forEach(card => {
+   card.style.display = "block";   
+        card.classList.remove("show");  
+        void card.offsetWidth;          
+        card.classList.add("show");     
+  });
+
+  textEmployer.forEach(card => card.style.display = "block");
+});
+
+btnImages.addEventListener("click", () => {
+  hideAll();
+  cardsImages.forEach(card => {
+    card.style.display = "block";
+    card.classList.remove("show");  
+        void card.offsetWidth;          
+        card.classList.add("show");  
+  });
+  textImg.forEach(card => card.style.display = "block");
+});
+
+    </script>
+</body>
+ </html>

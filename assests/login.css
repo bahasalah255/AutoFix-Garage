@@ -1,0 +1,87 @@
+body {
+    background-image: url("../images/test.png");
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.formulaire{
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+    
+}
+.form {
+    border: 1px solid transparent;
+    padding: 60px 110px;
+    background-color: white;
+    border-radius: 6px;
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    color: #0F172A;
+}
+input[type="text"]{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    
+}
+input[type="password"]{
+   width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+}
+.button {
+    margin-left: 12px;
+    padding: 10px 70px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: 0.3s;
+    background-color: red;
+    color: white;
+}
+.button1 {
+     margin-left: 12px;
+    padding: 10px 70px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: 0.3s;
+    background-color: #fdfdfd;
+   
+    
+}
+.button1 a {
+    text-decoration: none;
+    color: black;
+}
+.button1:hover {
+    transform: translateY(-5px);
+ border: 1px solid #ccc;
+ background-color: red;
+ color: white;
+}
+.button:hover {
+ transform: translateY(-5px);
+ border: 1px solid #ccc;
+ background-color: #fdfdfd;
+ color: #2563EB;
+}
+label {
+    font-size: 17px;
+}
+.error {
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 6px;
+    color: #DC2626;
+    background-color: #ff4949;
+    padding: 10px 30px;
+}

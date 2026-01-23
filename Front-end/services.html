@@ -1,0 +1,227 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="../assests/home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <nav class="navbar nav navbar-expand-lg shadow-sm fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="../images/logo1.png" alt="logo AutoFix" class="image">
+      <span class="fw-bold fs-2">AutoF<span class="text-danger">ix</span></span>
+      <span class="fs-small ms-1">Garage</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav align-items-center">
+        <li class="nav-item link"><a class="nav-link lien" href="index.html">Accueil</a></li>
+        <li class="nav-item link"><a class="nav-link lien" href="services.html">Services</a></li>
+        <li class="nav-item link"><a class="nav-link lien" href="galerie.html">Galerie</a></li>
+        <li class="nav-item link"><a class="nav-link lien" href="contact.php">Contact</a></li>
+        <li class="nav-item link"><a class="nav-link lien" href="../login.php" target="_blank"><i class="bi bi-box-arrow-in-left fs-4"></i></a></li>
+        <li class="nav-item link" id="mode"><a class="nav-link" href="#"><i class="bi bi-moon-fill fs-5"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container-fluid">
+<div class="services"  id="services">
+   <h3 class="text-center"><i class="bi text-danger bi-wrench-adjustable"></i>  Nos Services </h3>
+        <hr>
+        <p>Découvrez nos services professionnels dédiés à l’entretien et à la réparation de votre véhicule. Notre équipe expérimentée vous assure des interventions rapides, fiables et adaptées à vos besoins.</p>
+   <div class="cards">
+        <div class="row g-2">
+  <div class="col-lg-3 col-md-4 col-sm-12">
+    <div class="card rounded shadow-sm" id="mycard">
+      <div class="card-header p-0">
+        <img src="../images/entretien-voiture.jpg" class="entretien-voiture">
+        
+      </div>
+      <div class="card-body">
+        <h6 class="text-center"><i class="bi icons-services bi-clipboard-check"></i> Check-up complet du véhicule</h6>
+        <p>Vidange, filtres, fluides</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-3 col-md-4 col-sm-12">
+    <div class="card rounded shadow-sm" id="mycard">
+      <div class="card-header p-0">
+        <img src="../images/moteur.jpg" class="entretien-voiture">
+      </div>
+      <div class="card-body">
+        <h6 class="text-center"><i class="bi icons-services bi-gear-fill"></i> Entretien moteur</h6>
+        <p>Nettoyage moteur, remplacement pièces moteur</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-3 col-md-4 col-sm-12">
+    <div class="card  rounded shadow-sm" id="mycard">
+      <div class="card-header p-0">
+        <img src="../images/susp.jpg" class="entretien-voiture">
+      </div>
+      <div class="card-body">
+        <h6 class="text-center"><i class="bi icons-services bi-exclamation-triangle-fill"></i> Freins & suspensions</h6>
+        <p>Réparation/disque/pads</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3 col-md-4 col-sm-12">
+    <div class="card  rounded shadow-sm " id="mycard">
+      <div class="card-header p-0">
+        <img src="../images/equilibrage-pneu.jpg" class="entretien-voiture">
+      </div>
+      <div class="card-body">
+        <h6 class="text-center"><i class="bi icons-services bi-arrow-repeat"></i> Pneus & équilibrage</h6>
+        <p>Montage/démontage pneus
+Équilibrage et géométrie</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3 col-md-4 col-sm-12">
+    <div class="card mycard1 rounded shadow-sm " id="mycard">
+      <div class="card-header p-0">
+        <img src="../images/peinture.jpg" class="entretien-voiture">
+      </div>
+      <div class="card-body">
+        <h6 class="text-center"><i class="bi icons-services bi-paint-bucket"></i> Carrosserie & peinture</h6>
+        <p>Retouches peinture
+Réparation bosses et rayures</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3 col-md-4 col-sm-12">
+    <div class="card mycard1 rounded shadow-sm " id="mycard">
+      <div class="card-header p-0">
+        <img src="../images/diago.jpg" class="entretien-voiture">
+      </div>
+      <div class="card-body">
+        <h6 class="text-center"><i class="bi icons-services bi-cpu"></i> Diagnostic électronique</h6>
+        <p>Test moteur et électronique
+Détection pannes via OBD</p>
+      </div>
+    </div>
+  </div>
+   <div class="col-lg-3 col-md-4 col-sm-12">
+    <div class="card mycard1 rounded shadow-sm " id="mycard">
+      <div class="card-header p-0">
+        <img src="../images/battrie.jpg" class="entretien-voiture">
+      </div>
+      <div class="card-body">
+        <h6 class="text-center"><i class="bi icons-services bi-battery-full"></i> Batterie & électricité</h6>
+        <p>Test et remplacement batterie
+Réparation circuits électriques</p>
+      </div>
+    </div>
+  </div>
+   <div class="col-lg-3 col-md-4 col-sm-12">
+    <div class="card mycard1 rounded shadow-sm " id="mycard">
+      <div class="card-header p-0">
+        <img src="../images/gaz.jpg" class="entretien-voiture">
+      </div>
+      <div class="card-body">
+        <h6 class="text-center"><i class="bi icons-services bi-snow"></i> Climatisation</h6>
+        <p>Recharge gaz
+Vérification du système de clim</p>
+      </div>
+    </div>
+  </div>
+</div>
+<button class="btn btn-services btn-danger p-15" id="btn-services"><i class="bi bi-arrow-down" id="icon"></i> Voir Nous Services</button>
+       </div>
+    </div>
+</div>
+</div>
+ <div class="footer">
+  <div class="container">
+    <div class="row text-white py-5">
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <img src="../images/logo-footer.png" class="footer-logo mb-3">
+        <p>Garage professionnel spécialisé dans la réparation, entretien et diagnostic.</p>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <h5>Liens rapides</h5>
+        <ul class="list-unstyled">
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <h5>Contact</h5>
+        <p>📞 +212 65 333 4444</p>
+        <p>✉️ contact@autofix.com</p>
+        <p>📍 Casablanca, Maroc</p>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <h5>Suivez-nous</h5>
+        <div class="social-icons d-flex gap-3">
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-twitter"></i>
+          <i class="bi bi-instagram"></i>
+          <i class="bi bi-linkedin"></i>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="text-secondary">
+
+    <p class="text-center text-white">© 2026 AutoFix Garage. Tous droits réservés.</p>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    const mode = document.getElementById("mode");
+const body = document.body;
+
+mode.addEventListener("click", () => {
+    body.classList.toggle("dark-mode"); 
+
+    const icon = mode.querySelector("i");
+    if(body.classList.contains("dark-mode")){
+        icon.classList.replace("bi-moon-fill","bi-sun-fill");
+    } else {
+        icon.classList.replace("bi-sun-fill","bi-moon-fill");
+    }
+});
+    const button = document.getElementById("btn-services");
+const service1 = document.querySelectorAll(".mycard1");
+const icon = document.getElementById("icon");
+
+button.addEventListener("click", () => {
+  service1.forEach(card => {
+    card.classList.toggle("show");
+  });
+  if(icon.classList.contains("bi-arrow-down")){
+    icon.classList.replace("bi-arrow-down", "bi-arrow-up");
+  }
+  else {
+     icon.classList.replace("bi-arrow-up","bi-arrow-down" );
+  }
+});
+const services = document.getElementById("services");
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+     if(entry.isIntersecting){
+    services.classList.add("active");
+    
+    
+  } 
+  })
+ 
+})
+  
+observer.observe(services);
+</script>
+</body>
+</html>
