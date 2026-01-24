@@ -185,15 +185,23 @@ if(isset($_POST["confirmer"])){
 <script>
      const mode = document.getElementById("mode");
 const body = document.body;
+const icon = mode.querySelector("i");
+
+
+if (localStorage.getItem("theme") === "dark") {
+    body.classList.add("dark-mode");
+    icon.classList.replace("bi-moon-fill", "bi-sun-fill");
+}
 
 mode.addEventListener("click", () => {
-    body.classList.toggle("dark-mode"); 
+    body.classList.toggle("dark-mode");
 
-    const icon = mode.querySelector("i");
-    if(body.classList.contains("dark-mode")){
-        icon.classList.replace("bi-moon-fill","bi-sun-fill");
+    if (body.classList.contains("dark-mode")) {
+        icon.classList.replace("bi-moon-fill", "bi-sun-fill");
+        localStorage.setItem("theme", "dark");
     } else {
-        icon.classList.replace("bi-sun-fill","bi-moon-fill");
+        icon.classList.replace("bi-sun-fill", "bi-moon-fill");
+        localStorage.setItem("theme", "light");
     }
 });
 </script>

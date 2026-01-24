@@ -44,7 +44,7 @@ if(isset($_POST["send"])){
         <li class="nav-item link"><a class="nav-link lien" href="index.html">Accueil</a></li>
         <li class="nav-item link"><a class="nav-link lien" href="services.html">Services</a></li>
         <li class="nav-item link"><a class="nav-link lien" href="galerie.html">Galerie</a></li>
-        <li class="nav-item link"><a class="nav-link lien" href="contact.php">Contact</a></li>
+        <li class="nav-item link"><a class="nav-link lien active" href="contact.php">Contact</a></li>
         <li class="nav-item link"><a class="nav-link lien" href="../login.php" target="_blank"><i class="bi bi-box-arrow-in-left fs-4"></i></a></li>
         <li class="nav-item link" id="mode"><a class="nav-link" href="#"><i class="bi bi-moon-fill fs-5"></i></a></li>
       </ul>
@@ -91,7 +91,7 @@ if(isset($_POST["send"])){
 <br><br>
  <div class="footer">
   <div class="container">
-    <div class="row text-white py-5">
+    <div class="row text-white">
       <div class="col-lg-3 col-md-6 col-sm-12">
         <img src="../images/logo-footer.png" class="footer-logo mb-3">
         <p>Garage professionnel spécialisé dans la réparation, entretien et diagnostic.</p>
@@ -130,17 +130,25 @@ if(isset($_POST["send"])){
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script>
-    const mode = document.getElementById("mode");
+     const mode = document.getElementById("mode");
 const body = document.body;
+const icon = mode.querySelector("i");
+
+
+if (localStorage.getItem("theme") === "dark") {
+    body.classList.add("dark-mode");
+    icon.classList.replace("bi-moon-fill", "bi-sun-fill");
+}
 
 mode.addEventListener("click", () => {
-    body.classList.toggle("dark-mode"); 
+    body.classList.toggle("dark-mode");
 
-    const icon = mode.querySelector("i");
-    if(body.classList.contains("dark-mode")){
-        icon.classList.replace("bi-moon-fill","bi-sun-fill");
+    if (body.classList.contains("dark-mode")) {
+        icon.classList.replace("bi-moon-fill", "bi-sun-fill");
+        localStorage.setItem("theme", "dark");
     } else {
-        icon.classList.replace("bi-sun-fill","bi-moon-fill");
+        icon.classList.replace("bi-sun-fill", "bi-moon-fill");
+        localStorage.setItem("theme", "light");
     }
 });
 const contact = document.getElementById("contact");
