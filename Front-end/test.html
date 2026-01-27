@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre id="code">
+        print("hello world")
+    </pre>
+    <button id="btn">Copier Le code</button>
+    <script>
+        button = document.getElementById("btn");
+        button.addEventListener("click", () => {
+            const texte = document.getElementById("code").innerText;
+            navigator.clipboard.writeText(texte);
+            alert("texte copie");
+        })
+        console.log(navigator.onLine)
+    </script>
+</body>
+</html>

@@ -22,16 +22,21 @@ else {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashbord -</title>
     <link rel="stylesheet" href="assests/admin.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 <body>
     <navbar>
    <div class="navbar">
     
     <div class="navbarlinks">
-   <p>Welcome,Admin </p> 
+   <p class="fw-bold p-4">Welcome,<span class="text-info">Admin</span> </p> 
    <form action="admindashbord.php" method="post">
-    <input type="submit" name="logout" value="logout" class="button">
-   </form> 
+  <button type="submit" name="logout" class="button btn btn-danger d-flex align-items-center gap-2">
+    <i class="bi bi-box-arrow-right fs-5"></i>
+    <span>Logout</span>
+  </button>
+</form>
 
    </div>
    </div>
@@ -55,7 +60,7 @@ else {
     if(isset($_GET['page'])){
         $page = $_GET['page'];
         if($page == "dashboard"){
-            include("contents/dashbord-content.php");
+            include("contents/dashbord-content1.php");
         }
         elseif($page == "users"){
             include("list_users.php");

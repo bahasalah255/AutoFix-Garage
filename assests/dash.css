@@ -1,0 +1,166 @@
+body {
+    
+}
+.container {
+    margin: 50px;
+    margin-left: 40px;
+    width: 87%;
+    border-radius: 8px;
+}
+.textes {
+     display: block;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+.texte {
+    color: rgb(132, 65, 177);
+    margin: 30px;
+}
+.texte2 {
+    
+    margin: 30px;
+    margin-left: 35px;
+    color: #a7a4a4;
+}
+.mycard {
+    border-radius: 12px !important;
+    width: 230px;
+}
+.mycard .card-header.header-bleu {
+    background-color: #667eea;
+    height: 8px;
+}
+.mycard .card-header.header-rose {
+     background-color: #fa0a76;
+     height: 8px;
+}
+.mycard .card-header.header-cyan {
+     background-color: #5b71ff;
+     height: 8px;
+}
+.mycard .card-header.header-orange {
+     background-color: #b54835;
+     height: 8px;
+}
+.mycard .card-header.header-vio {
+     background-color: #271547;
+     height: 8px;
+}
+.mycard .card-body {
+    height: 190px;
+}
+.icon-dash {
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    color: white;
+    margin: 10px;
+    margin-top: 10px;
+}
+
+.icon.card1 {
+    background-color: #4a5ba4;
+    border: 1px solid transparent;
+    height: 60px;
+    width: 65px;
+    border-radius: 16px;
+}
+.table thead{
+    background-color: #667eea !important;  /* override bootstrap */
+    color: white !important;
+}
+.icon.card2 {
+    background-color: #fa0a76;
+    border: 1px solid transparent;
+    height: 60px;
+    width: 65px;
+    border-radius: 16px;
+}
+.icon.card3 {
+    background-color: #5b71ff;
+    border: 1px solid transparent;
+    height: 60px;
+    width: 65px;
+    border-radius: 16px;
+}
+.icon.card4 {
+    background-color: #b54835;
+    border: 1px solid transparent;
+    height: 60px;
+    width: 65px;
+    border-radius: 16px;
+}
+.icon.card5 {
+    background-color: #271547;
+    border: 1px solid transparent;
+    height: 60px;
+    width: 65px;
+    border-radius: 16px;
+}
+.user-texte {
+    margin: 20px;
+    width: 200px;
+    font-size: 16px;
+    color: #898989;
+}
+.form-control {
+    position: absolute;
+    top: 500px;
+    margin-top: 0px;
+   margin-left: 690px;
+}
+#btt {
+    position: absolute;
+    top: 500px;
+    margin-left: 950px;
+}
+a.card_action {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 10px 20px 30px rgb(0, 0, 0,0.1);
+    border: none;
+    transition: 0.3s;
+}
+a.card_action:hover {
+box-shadow: 10px 20px 30px rgb(0, 0, 0,0.4);
+transform: translateY(-5px);
+}
+.bi-person-plus {
+    font-size: 40px;
+    background-color: #4a5ba4;
+    padding: 10px 10px;
+   color: white;
+   border-radius: 50%;
+   
+}
+.icon-client {
+     font-size: 40px;
+    background-color: #8e9bd5;
+    padding: 10px 10px;
+   color: white;
+   border-radius: 50%;
+}
+.bi-car-front {
+     font-size: 40px;
+    background-color: #4c69eb;
+    padding: 10px 10px;
+   color: white;
+   border-radius: 50%;
+}
+.bi-tools {
+      font-size: 40px;
+    background-color: #333f76;
+    padding: 10px 10px;
+   color: white;
+   border-radius: 50%;
+}
+.user-texte11{
+     margin: 20px;
+    width: 100px;
+    font-size: 40px;
+}
+

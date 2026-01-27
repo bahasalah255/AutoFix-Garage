@@ -7,19 +7,31 @@ body {
 .navbar {
     border: 1px solid transparent;
     margin-left: 220px;
-    background-color: rgb(48, 61, 151);
+   background: linear-gradient(135deg, #7A0C0C, #4A0A0A);
 }
 .navbarlinks {
     display: flex;
     justify-content: space-between;
+    align-items: center; 
+    position: fixed;
+    top: 0;
+    left: 0;          
+    width: calc(100% - 219px); 
+    margin-left: 219px; 
+    background-color: #7A0C0C; 
+    z-index: 1000; 
+    padding: 10px 20px;
 }
+
+
 p {
     color: white;
     margin-left: 10px;
 }
+
 .button {
-    margin-top: 15px;
-   margin-right:10px ;
+   
+    margin-top: 19px;
     padding: 7px 30px;
     font-size: 15px;
     border: 1px solid #ccc;
@@ -41,7 +53,7 @@ p {
     top: 0;
     width: 220px;
     height: 100vh;
-    background-color: rgb(57, 68, 139);
+    background: linear-gradient(135deg, #7A0C0C, #4A0A0A);
 }
 p {
     display: flex;
@@ -55,7 +67,7 @@ hr {
     display: flex;
     flex-direction: column;
     gap: 20px;
-
+   background: linear-gradient(135deg, #7A0C0C, #4A0A0A);
 }
 .link {
     

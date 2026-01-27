@@ -37,7 +37,7 @@
         <hr>
         <p>Découvrez nos services professionnels dédiés à l’entretien et à la réparation de votre véhicule. Notre équipe expérimentée vous assure des interventions rapides, fiables et adaptées à vos besoins.</p>
    <div class="cards">
-        <div class="row g-2">
+        <div class="row g-4">
   <div class="col-lg-3 col-md-4 col-sm-12">
     <div class="card rounded shadow-sm" id="mycard">
       <div class="card-header p-0">
@@ -135,7 +135,7 @@ Vérification du système de clim</p>
     </div>
   </div>
 </div>
-<button class="btn btn-services btn-danger p-15" id="btn-services"><i class="bi bi-arrow-down" id="icon"></i> Voir Nous Services</button>
+<button class="btn btn-services btn-danger p-15" id="btn-services"><i class="bi bi-arrow-down" id="icon"></i> Voir Plus</button>
        </div>
     </div>
 </div>
@@ -213,9 +213,11 @@ button.addEventListener("click", () => {
   });
   if(icon.classList.contains("bi-arrow-down")){
     icon.classList.replace("bi-arrow-down", "bi-arrow-up");
+     button.innerHTML = "<i class='bi bi-arrow-up'></i>Voir Moins";
   }
   else {
      icon.classList.replace("bi-arrow-up","bi-arrow-down" );
+    button.innerHTML = "<i class='bi-arrow-down'></i>Voir Plus";
   }
 });
 const services = document.getElementById("services");
