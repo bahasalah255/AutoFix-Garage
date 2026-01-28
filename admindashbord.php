@@ -31,11 +31,7 @@ else {
     
     <div class="navbarlinks">
    <p class="fw-bold p-4">Welcome,<span class="text-info">Admin</span> </p> 
-   <form action="admindashbord.php" method="post">
-  <button type="submit" name="logout" class="button btn btn-danger d-flex align-items-center gap-2">
-    <i class="bi bi-box-arrow-right fs-5"></i>
-    <span>Logout</span>
-  </button>
+   
 </form>
 
    </div>
@@ -43,16 +39,22 @@ else {
 </navbar>
 <aside>
     <div class="aside">
-        <p>Garage Admin</p>
+        <p class="fw-bold p-5">Garage Admin</p>
         <hr>
         <div class="asideslinks">
-         <div class="link"><a href="admindashbord.php?page=dashboard">Dashbord </a></div>
-         <div class="link"><a href="admindashbord.php?page=users">Users</a></div>
-         <div class="link"><a href="admindashbord.php?page=clients">Clients</a></div>
-         <div class="link"><a href="admindashbord.php?page=voitures">Voitures</a></div>
-         <div class="link"><a href="admindashbord.php?page=reparations">Reparations</a></div>
-         <div class="link"><a href="admindashbord.php?page=factures">Factures</a></div>
+         <div class="link"><a href="admindashbord.php?page=dashboard" class="fw-bold"><i class="bi icon-dashbord bi-speedometer2"></i> Dashbord </a></div>
+         <div class="link"><a href="admindashbord.php?page=users" class="fw-bold"><i class="bi icon-dashbord bi-person"></i>Users</a></div>
+         <div class="link"><a href="admindashbord.php?page=clients" class="fw-bold"><i class="bi icon-dashbord bi-person-fill"></i>Clients</a></div>
+         <div class="link"><a href="admindashbord.php?page=voitures" class="fw-bold"><i class="bi icon-dashbord bi-car-front-fill"></i> Voitures</a></div>
+         <div class="link"><a href="admindashbord.php?page=reparations" class="fw-bold"><i class="bi icon-dashbord bi-wrench"></i> Reparations</a></div>
+         <div class="link"><a href="admindashbord.php?page=factures" class="fw-bold"><i class="bi icon-dashbord bi-receipt"></i> Factures</a></div>
         </div>
+        <form action="admindashbord.php" method="post">
+  <button type="submit" name="logout" class="button btn btn-danger d-flex align-items-center gap-2 m-5">
+    <i class="bi bi-box-arrow-right fs-5"></i>
+    <span>Logout</span>
+  </button>
+  </form>
     </div>
 </aside>
 <main class="main-content">

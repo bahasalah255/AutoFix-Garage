@@ -1,5 +1,6 @@
 body {
-    
+    margin: 0;
+    padding: 0;
 }
 .container {
     margin: 50px;
@@ -103,7 +104,7 @@ body {
     font-size: 16px;
     color: #898989;
 }
-.form-control {
+.search-bar {
     position: absolute;
     top: 500px;
     margin-top: 0px;
@@ -114,7 +115,7 @@ body {
     top: 500px;
     margin-left: 950px;
 }
-a.card_action {
+button.card_action {
     height: 120px;
     display: flex;
     justify-content: center;
@@ -124,8 +125,9 @@ a.card_action {
     box-shadow: 10px 20px 30px rgb(0, 0, 0,0.1);
     border: none;
     transition: 0.3s;
+    width: 210px;
 }
-a.card_action:hover {
+button.card_action:hover {
 box-shadow: 10px 20px 30px rgb(0, 0, 0,0.4);
 transform: translateY(-5px);
 }

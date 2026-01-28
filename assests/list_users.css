@@ -40,3 +40,28 @@ tr {
     color: white;
     cursor: pointer;
 }
+.btn-user {
+    margin-left: 900px;
+    transition: 0.3s;
+    box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.1);
+}
+.btn-user:hover {
+ box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.2);
+ transform: translateY(-4px);
+}
+.mybadge1 {
+    background-color: red !important;
+    font-size: 14px !important;
+    color: white !important;
+    padding: 3px 8px !important;
+    border-radius: 12px !important;
+    font-weight: bold !important;
+}
+.mybadge2 {
+    background-color: #2563EB !important;
+    font-size: 14px !important;
+     color: white !important;
+    padding: 3px 8px !important;
+    border-radius: 12px !important;
+    font-weight: bold !important;
+}
