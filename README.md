@@ -1,7 +1,7 @@
 # 🚗 AutoFix-Garage | Garage Management System 🔧
 
 AutoFix-Garage est un **système de gestion de garage automobile** développé en **PHP & MySQL**.  
-Il permet aux administrateurs de gérer efficacement les **clients, voitures, réparations et factures** عبر un **dashboard moderne et intuitif**.
+Il permet aux administrateurs de gérer efficacement les **clients, voitures, réparations et factures**  Avec Un **dashboard moderne et intuitif**.
 
 ---
 
