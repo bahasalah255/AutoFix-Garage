@@ -103,6 +103,7 @@ if(isset($_GET["delete"])){
 
                 <option value="admin">Admin</option>
                 <option value="user">User</option>
+                <option value="client">Client</option>
             </select>
           </div>
 

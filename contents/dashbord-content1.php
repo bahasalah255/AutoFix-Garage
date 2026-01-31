@@ -89,7 +89,7 @@ if(isset($_POST["delete"])){
     exit;
 
 }
-$stmt = $connexion->prepare("SELECT id,nom FROM clients");
+$stmt = $connexion->prepare("SELECT id,nom FROM users");
 $stmt->execute();
 $clients_id = $stmt->fetchAll(PDO::FETCH_ASSOC);
 $stmt = $connexion->prepare("SELECT id FROM voiture");

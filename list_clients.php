@@ -7,14 +7,29 @@ require("connexion.php");
 $error = "";
 $message = "";
 if(isset($_POST["addclient"])){
-    if(!empty($_POST["name"]) && !empty($_POST["prenom"]) && !empty($_POST["telephone"]) && !empty($_POST["adresse"])){
+    if(!empty($_POST["name"]) && !empty($_POST["prenom"]) && !empty($_POST["telephone"]) && !empty($_POST["adresse"]) && !empty($_POST["username_sign"]) && !empty($_POST["password_sign"]) && !empty($_POST["checkpassword"])){
+        if(!filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)){
+           $sign_error = "Email n'est pas valide";
+        } else {
+            $stmt = $connexion->prepare("SELECT email from users where email = ?");
+        $stmt->execute([$_POST["email"]]);
+        $data_sign = $stmt->fetch(PDO::FETCH_ASSOC);
+
+        if($_POST["password_sign"] === $_POST["checkpassword"] && !$data_sign){
+            if(strlen($_POST["password_sign"]) < 8){
+                $sign_error = "Votre Mot De passe doit depasser 8 caracteres";
+            }
+            else {
+                $username_sign = trim(strip_tags($_POST["username_sign"]));
         $id = $_SESSION["id"];
         $nom = $_POST["name"];
+        $email = $_POST["email"];
         $prenom = $_POST["prenom"];
         $telephone = $_POST["telephone"];
         $adresse = $_POST["adresse"];
-        $stmt = $connexion->prepare("INSERT INTO clients (nom,prenom,telephone,adresse,user_id) values(?,?,?,?,?)");
-        $stmt->execute([$nom,$prenom,$telephone,$adresse,$id]);
+        $hash = password_hash(trim($_POST["password_sign"]),PASSWORD_DEFAULT);
+       $stmt = $connexion->prepare("INSERT into users (username,email,password,nom,prenom,tele,adresse) values(?,?,?,?,?,?,?)");
+            $stmt->execute([$username_sign,$email,$hash,$nom,$prenom,$telephone,$adresse]);
         $message = "Ajouter Avec Success";
         header("location: admindashbord.php?page=clients");
         exit;
@@ -26,19 +41,21 @@ if(isset($_POST["addclient"])){
             header("location: admindashbord.php?page=dashboard");
         }
         */
-
+            }
     }
     else {
         $error = "Les Champs Sont Vides";
     }
+        }
 }
-$stmt = $connexion->prepare("SELECT * FROM clients order by nom ASC");
+}
+$stmt = $connexion->prepare("SELECT * FROM users where role = 'client' order by username ASC");
 $stmt->execute();
 $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 if(isset($_GET["delete"])){
     $id = $_GET["id"];
-    $stmt = $connexion->prepare("DELETE from clients where id = ?");
+    $stmt = $connexion->prepare("DELETE from users where id = ?");
     $stmt->execute([$id]);
     echo "<p id='error'>Deleted Avec Success </p>";
     header("location: admindashbord.php?page=clients");
@@ -89,7 +106,14 @@ if(isset($_GET["delete"])){
             <label class="form-label" for="prenom">Last Name</label>
             <input type="text"  name="prenom" class="form-control form-control-sm" placeholder="Enter Votre Prenom" required>
         </div>
-        
+        <label class="form-label">Username : </label>
+        <input type="text" name="username_sign" class="form-control form-control-sm" placeholder="Enter Votre Username">
+        <label class="form-label">Email : </label><br>
+        <input type="email" name="email" class="form-control form-control-sm" placeholder="Enter Votre email">
+        <label class="form-label">Password : </label><br>
+        <input type="password" name="password_sign" class="form-control form-control-sm" placeholder="Enter Votre password">
+        <label class="form-label">Verifie Password : </label><br>
+        <input type="password" name="checkpassword" class="form-control form-control-sm" placeholder="Enter Votre password">
         <div class="mb-3">
             <label class="form-label" for="phone">Phone Number</label>
             <input type="phone"  name="telephone" placeholder="Enter Phone Number" class="form-control form-control-sm" required>
@@ -115,7 +139,8 @@ if(isset($_GET["delete"])){
       <th scope="col">Prenom</th>
       <th scope="col">Telephone</th>
       <th scope="col">Adresse</th>
-      <th scope="col">User ID</th>
+      <th scope="col">Username</th>
+      <th scope="col">Email</th>
       <th scope="col">Created Time</th>
       <th scope="col">Actions</th>
       
@@ -128,10 +153,11 @@ foreach($data as $row){
     echo "<td>{$row['id']}</td>
     <td>{$row['nom']}</td>
     <td>{$row['prenom']}</td>
-    <td>{$row['telephone']}</td>
+    <td>{$row['tele']}</td>
     <td>{$row['adresse']}</td>
-    <td>{$row['user_id']}</td>
-    <td>{$row['created_time']}</td>
+    <td>{$row['username']}</td>
+    <td>{$row['email']}</td>
+    <td>{$row['date_inscription']}</td>
     <td><form action='list_clients.php' method='get'><input type='hidden' name='id' value='{$row['id']}'><button type='submit' class='btn btn-danger  btn-sm fs-6' name='delete'> <i class='bi bi-trash'></i> </button>
     <button type='submit' name='edit' class='btn btn-primary btn-sm fs-6'><i class='bi bi-pencil-square'></i></form></td>
     ";

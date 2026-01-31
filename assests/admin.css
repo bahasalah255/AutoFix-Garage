@@ -91,3 +91,27 @@ hr {
     left: 240px;
     color: black;
 }
+.email {
+    font-size: 13px;
+    color: #ccc;
+}
+.nom {
+    color: white;
+    margin-left: 20px;
+    font-size: 16px;
+}
+.img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+.view {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.clientcontainer {
+    background-color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+}

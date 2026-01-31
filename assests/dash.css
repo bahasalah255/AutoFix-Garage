@@ -31,6 +31,10 @@ body {
     background-color: #667eea;
     height: 8px;
 }
+.mycard .card-header.header-yellow {
+    background: linear-gradient(135deg, #facc15, #f59e0b);
+    height: 8px;
+}
 .mycard .card-header.header-rose {
      background-color: #fa0a76;
      height: 8px;
@@ -139,6 +143,7 @@ transform: translateY(-5px);
    border-radius: 50%;
    
 }
+
 .icon-client {
      font-size: 40px;
     background-color: #8e9bd5;
@@ -162,7 +167,10 @@ transform: translateY(-5px);
 }
 .user-texte11{
      margin: 20px;
-    width: 100px;
+    width: 200px;
     font-size: 40px;
+}
+.header-yellow {
+
 }
 

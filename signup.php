@@ -2,13 +2,14 @@
 session_start();
 require("connexion.php");
 $error = "";
-if(empty($_SESSION['token'])){
+/*if(empty($_SESSION['token'])){
     $_SESSION['token'] = bin2hex(random_bytes(32));
 }
-if(isset($_POST["signup"])){
+
     if(!isset($_POST['token']) || $_POST['token'] !== $_SESSION['token']) {
     die("Action non autorisée !");
-}
+}*/
+if(isset($_POST["signup"])){
     if(!empty($_POST["username"]) && !empty($_POST["email"]) && !empty($_POST["password"]) && !empty($_POST["checkpassword"])){
         if(!filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)){
             $error = "Email n'est pas valide";
@@ -29,9 +30,9 @@ if(isset($_POST["signup"])){
             $hash = password_hash(trim($_POST["password"]),PASSWORD_DEFAULT);
             $stmt = $connexion->prepare("INSERT into users (username,email,password) values(?,?,?)");
             $stmt->execute([$username,$email,$hash]);
-            header("location: login.php");
+            header("location: login2.php");
             exit;
-            unset($_SESSION['token']);
+            //unset($_SESSION['token']);
             }
             
         }
@@ -46,38 +47,3 @@ if(isset($_POST["signup"])){
     }     
 }
 ?>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sign up</title>
-    <link rel="stylesheet" href="assests/signup.css">
-</head>
-<body>
-    <div class="formulaire">
-        <div class="form">
-           <?php if(!empty($error)){ ?>
-    <p class="error"><?php echo htmlspecialchars($error); ?></p>
-<?php } ?>
-
-    <form action="signup.php" method="post">
-        <h1>Sign Up</h1>
-        <label>Username : </label><br>
-        <input type="text" name="username" placeholder="Enter Votre Nom"><br><br>
-        <label>Email : </label><br>
-        <input type="email" name="email" placeholder="Enter Votre email"><br><br>
-        <label>Password : </label><br>
-        <input type="password" name="password" placeholder="Enter Votre password"><br><br>
-        <label>Verifie Password : </label><br>
-        <input type="password" name="checkpassword" placeholder="Enter Votre password"><br><br>
-        <input type="hidden" name="token" value="<?php echo $_SESSION['token']; ?>">
-
-        <input type="submit" name="signup" value="Sign Up" class="button">
-        
-    </form>
-    </div>
-    </div>
-</body>
-</html>
-
-
