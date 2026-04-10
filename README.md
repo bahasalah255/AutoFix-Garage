@@ -1,4 +1,4 @@
-# 🚗 AutoFix Garage
+# AutoFix Garage
 
 <div align="center">
 
@@ -16,50 +16,50 @@
 
 ---
 
-## 📖 About
+##  About
 
 **AutoFix Garage** is a complete web-based garage management system designed to streamline day-to-day operations of an auto repair shop. It provides three role-based dashboards — **Admin**, **User**, and **Client** — each with dedicated tools for managing clients, vehicles, repairs, invoices, and appointments.
 
 ---
 
-## ✨ Features
+##  Features
 
-### 🔐 Authentication
+###  Authentication
 - Secure login / logout system
 - Role-based access control (Admin / User / Client)
 - Sign up for new accounts
 
-### 📊 Admin Dashboard
+###  Admin Dashboard
 - Overview statistics: total users, clients, vehicles, and repairs
 - Full control over all system entities
 
-### 👤 User Management
+###  User Management
 - Add, view, and manage system users
 - Role assignment and access control
 
-### 🧑‍💼 Client Management
+###  Client Management
 - Register and track client profiles
 - Link clients to their vehicles
 
-### 🚘 Vehicle Management
+###  Vehicle Management
 - Add and manage vehicles per client
 - Full vehicle history tracking
 
-### 🔧 Repair Management
+###  Repair Management
 - Log and track repairs (in progress / completed)
 - Assign repairs to clients and vehicles
 
-### 🧾 Invoice Management
+###  Invoice Management
 - Generate and view invoices per repair
 - Full billing history
 
-### 📅 Appointments
+###  Appointments
 - Schedule and manage rendez-vous
 - Client-side appointment booking
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Layer | Technology |
 |-------|-----------|
@@ -70,7 +70,7 @@
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 AutoFix-Garage/
@@ -111,7 +111,7 @@ AutoFix-Garage/
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -154,7 +154,7 @@ AutoFix-Garage/
 
 ---
 
-## 📌 Roadmap
+##  Roadmap
 
 - [ ] PDF invoice export
 - [ ] Email notifications for appointments
@@ -164,14 +164,14 @@ AutoFix-Garage/
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 **Salah Baha**
-🔗 GitHub: [@bahasalah255](https://github.com/bahasalah255)
+GitHub: [@bahasalah255](https://github.com/bahasalah255)
 
 ---
 
-## 📄 License
+##  License
 
 This project is open source and available under the [MIT License](LICENSE).
 
@@ -179,6 +179,6 @@ This project is open source and available under the [MIT License](LICENSE).
 
 <div align="center">
 
-⭐ If you find this project useful, please give it a star!
+ If you find this project useful, please give it a star!
 
 </div>
